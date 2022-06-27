@@ -1,6 +1,6 @@
 //Displying current date and time pulling from moment.js
 var dateTime = moment().format('dddd, MMMM Do - h:mm:ss a');
-$('#currentDay').text(dateTime);
+$('#current').text(dateTime);
 // console.log(dateTime);
 //for each method to loop over each time block and display the colors
 function colorCoded() {
@@ -25,7 +25,7 @@ function colorCoded() {
             $(this).addClass("future");
         }   
     });}
-    colorCoded();//Calling function colorCoded().
+    colorCoded();
     //Added event listener to the save button   
     $(".saveBtn").on("click",function(){
         var text = $(this).siblings(".description").val().trim();//grabbing the description class from sibling textarea html element 
@@ -34,8 +34,11 @@ function colorCoded() {
         console.log(value);
         localStorage.setItem(value,text);//saving the data into local storage using set item method
      });
-    //Retrieving the stored data from local storage for each timeblock and displaying on the page using getitem method
+     
+    //Retrieving the stored data from local storage 
+    //https://developer.mozilla.org/en-US/docs/Web/API/Storage/getItem
     function displayData(){
+    $("#hour-8 .description").val(localStorage.getItem("hour-8"));
     $("#hour-9 .description").val(localStorage.getItem("hour-9"));
     $("#hour-10 .description").val(localStorage.getItem("hour-10"));
     $("#hour-11 .description").val(localStorage.getItem("hour-11"));
@@ -47,4 +50,4 @@ function colorCoded() {
     $("#hour-17 .description").val(localStorage.getItem("hour-17"));
     $("#hour-18 .description").val(localStorage.getItem("hour-18"));
     };
-    displayData();//calling display data function
+    displayData();
