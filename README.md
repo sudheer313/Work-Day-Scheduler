@@ -6,8 +6,8 @@
 
 ## Links
 
-[Github URL here](https://github.com/ashachakre0906/Work-Day-Planner)<br>
-[Live webpage URL](https://ashachakre0906.github.io/Work-Day-Planner/)<br>
+[Github URL here](https://github.com/sudheer313/Work-Day-Scheduler)<br>
+[Live webpage URL](https://sudheer313.github.io/Work-Day-Scheduler/)<br>
 
 ## User Story
 
@@ -37,17 +37,18 @@ THEN the saved events persist
 
 ### Header displays the current day, date and time
 
-<img src =./assets/images/currentdateandtime.png>
+<img src =./assets/images/workDay.1.png>
 
-### Color-coded each time-block (PAST - GREY,PRESENT - RED, FUTURE - GREEN)
+### Color-coded each time-block (PAST - Silver, PRESENT - RED, FUTURE - GREEN)
 
-<img src =./assets/images/colorblock.png>
+<img src =./assets/images/workDay.2.png>
 
 ### Function displayData() will retrieve the data from the local storage and display it on the page.data will still persists after refreshing the page.
 
 ```
 function displayData(){
-    $("#hour-9 .description").val(localStorage.getItem("hour-9"));
+    $("#hour-8 .description") .val(localStorage.getItem("hour-9"));
+    $("#hour-9 .description") .val(localStorage.getItem("hour-9"));
     $("#hour-10 .description").val(localStorage.getItem("hour-10"));
     $("#hour-11 .description").val(localStorage.getItem("hour-11"));
     $("#hour-12 .description").val(localStorage.getItem("hour-12"));
@@ -69,27 +70,4 @@ function displayData(){
 
 ## Author
 
-Starter code includes some parts of HTML and full CSS given by UC Berkely Extension.
-## License
-
-Licensed under the [MIT](https://choosealicense.com/licenses/mit/) license.
-
-Copyright (c) [2022] [Asha Chakre]
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+@Sudheer kandula

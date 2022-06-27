@@ -28,18 +28,18 @@ function workDay() {
     workDay();
     //Event Listener assigned to Save Button   
     $(".saveBtn").on("click",function(){
-        var text = $(this).siblings(".des").val().trim();//grabbing the des class from sibling textarea html element 
+        var text = $(this).siblings(".des").val().trim();//calling the des class from sibling textarea html element 
         console.log(text);
         var value = $(this).parent().attr("id");
         console.log(value);
-        localStorage.setItem(value,text);//saving the data into local storage using set item method
+        localStorage.setItem(value,text);//Using setItem method storing value into local Storage
      });
      
     //Retrieving the stored data from local storage 
     //https://developer.mozilla.org/en-US/docs/Web/API/Storage/getItem
     function displayData(){
-    $("#hour-8 .des").val(localStorage.getItem("hour-8"));
-    $("#hour-9 .des").val(localStorage.getItem("hour-9"));
+    $("#hour-8  .des").val(localStorage.getItem("hour-8"));
+    $("#hour-9  .des").val(localStorage.getItem("hour-9"));
     $("#hour-10 .des").val(localStorage.getItem("hour-10"));
     $("#hour-11 .des").val(localStorage.getItem("hour-11"));
     $("#hour-12 .des").val(localStorage.getItem("hour-12"));
