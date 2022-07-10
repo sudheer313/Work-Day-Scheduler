@@ -32,20 +32,20 @@
 <!-- Timeblocks  -->
 <!-- 8 AM-->
       <div class="row time-block" id="hour-8">
-        <div class="col-md-1 hour pt-4 ">8AM</div> 
-        <textarea class="col-md-10 des"></textarea>
+        <div id="time1" class="col-md-1 hour pt-4 ">8AM</div>
+        <textarea class="col-md-10 des" id="textarea"></textarea>
         <button class="col-md-1 saveBtn"><i class="fas fa-save"></i></button>
       </div>
 <!--9AM-->
-      <div class="row time-block" id="hour-9">
-        <div class="col-md-1 hour pt-4 ">9AM</div> 
+      <div  class="row time-block" id="hour-9">
+        <div id="time2" class= "col-md-1 hour pt-4 ">9AM</div> 
         <textarea class="col-md-10 des"></textarea>
         <button class="col-md-1 saveBtn"><i class="fas fa-save"></i></button>
       </div>
  <!--10AM-->
         <div class="row time-block" id="hour-10">
 
-            <div class=" col-md-1 hour pt-4">10AM</div>
+            <div id="time3" class=" col-md-1 hour pt-4">10AM</div>
             <textarea class="col-md-10 des"></textarea>
             <button class="col-md-1 saveBtn"><i class="fas fa-save"></i></button>
           </div>
@@ -90,7 +90,7 @@
           <div class="row time-block" id="hour-17">
             <div class="col-md-1 pt-4 hour">5PM</div>
             <textarea class="col-md-10 des"></textarea>
-            <button class="col-md-1 saveBtn"><i class="fas fa-save"></i></button>
+            <button class="col-md-1 saveBtn" onclick="click()"><i class="fas fa-save"></i></button>
           </div>
 <!--6PM-->
           <div class="row time-block" id="hour-18">
