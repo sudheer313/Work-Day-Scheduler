@@ -1,16 +1,21 @@
 var dateTime = moment().format("MMM Do YY"); //https://momentjs.com/
 $("#current").html(dateTime);
-
 var time1 = document.querySelector(".time-block");
 var saveBtn = document.querySelectorAll("button");
-var textarea = document.querySelectorAll("#textarea");
+var textarea = $("textarea");
 var now = moment().hour();//current time
 var time = parseInt(time1.innerText.split("")[0]);//blocktime
+console.log(time)
+console.log(now)
 function blockColor() {
-    if (time<now){
-        textarea.style.backgroundColour="#FF5733";
-    }else
-    textarea.style.backgroundColour="#33FF57";
-    blockColor();
+    $('.time-block').each(function ()
+    {
+        
+   if (time == now) {
+       textarea.css("background-color", "#75FF33");
+   } else {
+       textarea.css("background-color", "#FF5733");
+   }
+})
 }
-
+blockColor();
