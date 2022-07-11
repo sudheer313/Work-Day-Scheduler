@@ -5,7 +5,7 @@ I would like to develop a work-day scheduler where a user can take a note of his
 A simple calendar application that allows a user to save events for each hour of the day. It runs in the browser and feature dynamically updated HTML and CSS powered by jQuery. My Time-Blocks are from 8 AM -6 PM.
 
 #Deployment
-[Github repo]:sudheer313/Work-Day-Scheduler
+[Github repo]:sudheer313/Work-Day-Scheduler <br>
 [Github URL here](https://github.com/sudheer313/Work-Day-Scheduler)<br>
 [Live webpage URL](https://sudheer313.github.io/Work-Day-Scheduler/)<br>
 
