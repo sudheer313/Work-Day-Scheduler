@@ -1,23 +1,23 @@
 ## Work-Day-Scheduler
+I would like to develop a work-day scheduler where a user can take a note of his daily activies and he can retrive them before  or after the time block
 
 ## Decsription of the project
 A simple calendar application that allows a user to save events for each hour of the day. It runs in the browser and feature dynamically updated HTML and CSS powered by jQuery. My Time-Blocks are from 8 AM -6 PM.
 
-## Links
-
+#Deployment
+[Github repo]:sudheer313/Work-Day-Scheduler
 [Github URL here](https://github.com/sudheer313/Work-Day-Scheduler)<br>
 [Live webpage URL](https://sudheer313.github.io/Work-Day-Scheduler/)<br>
 
 ## User Story
 
-```
 AS AN employee with a busy schedule
 I WANT to add important events to a daily planner
 SO THAT I can manage my time effectively
-```
+
 
 ## Acceptance Criteria
-```
+
 GIVEN I am using a daily planner to create a schedule
 WHEN I open the planner
 THEN the current day is displayed at the top of the calendar
@@ -32,38 +32,20 @@ THEN the text for that event is saved in local storage
 WHEN I refresh the page
 THEN the saved events persist
 
-```
 
 ### Header displays the current day, date and time
-
-<img src =./assets/images/workDay.1.png>
+*demo of landing page
+![Demo of Landing page](./assets/images/Workday-1.png)
 
 ### Color-coded each time-block (PAST - Silver, PRESENT - RED, FUTURE - GREEN)
 
-<img src =./assets/images/workDay.2.png>
+![color coded for each time](./assets/images/Workday-2.png)
 
 ### made my application resposive by adding @media screen and (max-width: 768px), screen and (max-width: 575px)
 
-<img src =./assets/images/workDay.3.png>
+![Data storing and retreiving](./assets/images/Workday-3.png)
 
-### Function displayData() will retrieve the data from the local storage and display it on the page.data will still persists after refreshing the page.
 
-```
-function displayData(){
-    $("#hour-8 .description") .val(localStorage.getItem("hour-9"));
-    $("#hour-9 .description") .val(localStorage.getItem("hour-9"));
-    $("#hour-10 .description").val(localStorage.getItem("hour-10"));
-    $("#hour-11 .description").val(localStorage.getItem("hour-11"));
-    $("#hour-12 .description").val(localStorage.getItem("hour-12"));
-    $("#hour-13 .description").val(localStorage.getItem("hour-13"));
-    $("#hour-14 .description").val(localStorage.getItem("hour-14"));
-    $("#hour-15 .description").val(localStorage.getItem("hour-15"));
-    $("#hour-16 .description").val(localStorage.getItem("hour-16"));
-    $("#hour-17 .description").val(localStorage.getItem("hour-17"));
-    $("#hour-18 .description").val(localStorage.getItem("hour-18"));
-    };
-    displayData()
-```
 ## Built with
 
 - HTMLs
@@ -71,6 +53,26 @@ function displayData(){
 - Jquery
 - Bootstrap. 
 
+## Features
+It lets user to save and retrive information. And the time blocks are color coded which makes my application user-freindly.
+
+## Credits
+1. [MDN files] https://developer.mozilla.org/en-US/docs/Web/API
+2. Ask BCS 
+3. referred  ashachakre0906/Work-Day-Planner repository
+4. referred mevaldovi/Weather-Search-API_revised
+repository
+5. [Bootstrapdocs]https://getbootstrap.com/docs/5.2/getting-started/introduction/
+6. [momentJSDOCS]https://momentjs.com/docs/
+7. [Jquery docs] https://api.jquery.com/
+
+
+## What we learned
+I learned few important stuff regarding Jqury and Bootstrap. I also got hands on practice with local storage and Transversing Dom using Jquery.
+I became more familiar with Bootstrap and Mooment JS most importantly. This assignmnet help me to get experiance with Bootstrap, Jquary and Moment JS.
+
+## Challenges
+I had no clue how to create time and display time. But when I referred to class tutorials and Bootsrap docs helped me through. I also regerred moment Js docs to over come this. Most importantly I was struck at DOM traversal and Jquery documentation helped me to get through. I had some issues understanding local storge and MDN Docs helped me to over come this. 
 ## Author
 
 @Sudheer kandula

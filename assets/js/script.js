@@ -1,4 +1,4 @@
-var dateTime = moment().format("MMM Do YY"); //https://momentjs.com/
+var dateTime = moment().format("DD MMM YY HH:MM"); //https://momentjs.com/
 $("#current").html(dateTime);
 var time1 = document.querySelector(".time-block");
 var saveBtn = document.querySelectorAll("button");
@@ -16,7 +16,12 @@ function blockColor() {
         $(this)
           .attr('id')
           .split('-')[1]
+          
       );
+      // retrives datafrom local storage
+      var preValue=localStorage.getItem(textarea);
+      console.log(preValue);
+      $(this).children('.des').val(preValue);
     if (textarea < now) {
         $(this).addClass('past');
         } else if (textarea === now) {
@@ -30,8 +35,13 @@ function blockColor() {
 })
 }
 blockColor();
-$('.saveBtn').click(function (event)
-{
-console.log("testing");
+$('.saveBtn').click(function (event) {
+  console.log("testing");
+  var time = $(this).closest('.time-block').attr('id').split('-')[1];
+console.log(time);
+  // below for the textVal
+var textVal=$(this).siblings('.des').val();
+  
+localStorage.setItem(time,textVal);
 
 })
